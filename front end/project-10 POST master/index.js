@@ -1,4 +1,4 @@
-console.log('This is my project 6 from JavaScript course');
+
 
 // Utility functions:
 // 1. Utility function to get DOM element from string
