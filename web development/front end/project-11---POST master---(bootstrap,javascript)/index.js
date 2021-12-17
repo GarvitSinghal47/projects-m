@@ -1,5 +1,4 @@
 
-
 // Utility functions:
 // 1. Utility function to get DOM element from string
 function getElementFromString(string) {

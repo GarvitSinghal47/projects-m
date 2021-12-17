@@ -6,7 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-  /* rem is ued to size a object in terms of the parent elementor html  */
+  /* rem is ued to size a object in terms of the parent element or html  */
   /* .. is used to get back in folders or to parent folder */
 
 #navbar{
@@ -16,6 +16,7 @@ html{
     position: relative;
 }
 
+/* while craeating a before content,position ,height,width,z-indexare necessary to make like as in website */
 #navbar::before{
     content: "";
     background-color: black;
@@ -113,7 +114,7 @@ html{
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 10px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 

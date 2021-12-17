@@ -19,9 +19,13 @@
         setInterval(() => {
             a = new Date(); 
             date = a.toLocaleDateString(undefined, options);
+            //here undefined is used to set language according to the local region
+            //otherwise it can be fixed according to the region
+
             time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
             document.getElementById('time').innerHTML = time + "<br>on " + date;
         }, 1000);
+        //time in set interval is in milliseconds so it will get refreshed after every 1 s
     </script>
 </head>
 
