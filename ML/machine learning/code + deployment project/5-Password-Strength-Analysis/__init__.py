@@ -2,6 +2,12 @@ from flask import Flask, render_template, flash, request
 import joblib
 
 app = Flask(__name__)
+ # Load the algorithm models
+DecisionTree_Model = joblib.load('model/DecisionTree_Model.joblib')
+LogisticRegression_Model = joblib.load('model/LogisticRegression_Model.joblib')
+NaiveBayes_Model = joblib.load('model/NaiveBayes_Model.joblib')
+RandomForest_Model = joblib.load('model/RandomForest_Model.joblib')
+NeuralNetwork_Model = joblib.load('model/NeuralNetwork_Model.joblib')
 
 @app.route('/')
 def homepage():
@@ -15,12 +21,7 @@ def mainpage():
     else:
         return render_template('index.html')
 
-    # Load the algorithm models
-    DecisionTree_Model = joblib.load('model/DecisionTree_Model.joblib')
-    LogisticRegression_Model = joblib.load('model/LogisticRegression_Model.joblib')
-    NaiveBayes_Model = joblib.load('model/NaiveBayes_Model.joblib')
-    RandomForest_Model = joblib.load('model/RandomForest_Model.joblib')
-    NeuralNetwork_Model = joblib.load('model/NeuralNetwork_Model.joblib')
+   
     
     Password = [enteredPassword]
 
